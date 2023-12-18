@@ -1,0 +1,22 @@
+.footer{
+    background-color: black;
+    color:rgba(255, 255, 255, 0.897);
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.footer svg{
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.25rem 0 0.25rem 0;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,64 @@
+ .create-patient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    height: max-content;
+  min-height: 87vh;
+  width: 100%;
+}
+.patient-registration-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aqua;
+  height: 20rem;
+  width: 40rem;
+  border-radius: 2rem;
+  gap: 1rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+form input {
+  height: 2rem;
+  width: 15rem;
+  text-align: center;
+  border: 1px solid rgb(38, 39, 126);
+  border-radius: 1rem;
+  color: black;
+  text-transform: capitalize;
+}
+
+
+.patient-registration-form button {
+  background-color: green;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 1rem;
+  color: transparent;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.patient-registration-form button:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+
+@media screen and (max-width: 700px) {
+  .patient-registration-form{
+    width: 20rem;
+  }
+}
