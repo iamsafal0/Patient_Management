@@ -20,6 +20,10 @@ const patientSchema = new mongoose.Schema({
   gender: {
     type: String,
   },
+  createdAt:{
+    type:Date,
+    default:Date.now()
+  },
   visits: [{
     visitDate: {
       type: String,
