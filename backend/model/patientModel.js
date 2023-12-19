@@ -29,7 +29,7 @@ const patientSchema = new mongoose.Schema({
       type: String,
       default: formatDate(Date.now()),
     },
-    diagnoses: { type: String },
+    diagnosis: { type: String },
     prescriptions: { type: String },
   }]
 });

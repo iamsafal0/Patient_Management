@@ -88,7 +88,7 @@ exports.createPatientVisit = async (req, res, next) => {
   try {
     const patient = await Patient.findById(req.params.id);
 
-    const { visitDate, diagnoses, prescriptions } = req.body;
+    const { visitDate, diagnosis, prescriptions } = req.body;
 
     if (!patient) {
       return res.status(404).json({ message: "Patient not found" });
@@ -96,7 +96,7 @@ exports.createPatientVisit = async (req, res, next) => {
 
     const newVisit = {
       visitDate,
-      diagnoses,
+      diagnosis,
       prescriptions,
     };
     patient.visits.push(newVisit);

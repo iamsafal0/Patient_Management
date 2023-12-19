@@ -14,7 +14,7 @@ import {
 const PatientDetails = () => {
   const [patient, setPatient] = useState([]);
   const [open, setOpen] = useState(false);
-  const [diagnoses, setDiagnoses] = useState("");
+  const [diagnosis, setDiagnosis] = useState("");
   const [prescriptions, setPrescriptions] = useState("");
 
   const { id } = useParams();
@@ -26,8 +26,8 @@ const PatientDetails = () => {
   const addVisitHandler = async () => {
     // Create a new visit object to add to the patient's visits
     const newVisit = {
-      diagnoses,
-      prescriptions,
+      diagnosis,
+      prescriptions
     };
 
     try {
@@ -92,8 +92,8 @@ const PatientDetails = () => {
                 <input
                   type="text"
                   placeholder="Diagnosis"
-                  value={diagnoses}
-                  onChange={(e) => setDiagnoses(e.target.value)}
+                  value={diagnosis}
+                  onChange={(e) => setDiagnosis(e.target.value)}
                 />
                 <input
                   type="text"
@@ -122,7 +122,7 @@ const PatientDetails = () => {
                     <strong>Visited Date:</strong> {visit.visitDate}
                   </p>
                   <p>
-                    <strong>Diagnosis:</strong> {visit.diagnoses}
+                    <strong>Diagnosis:</strong> {visit.diagnosis}
                   </p>
                   <p>
                     <strong>Prescription:</strong> {visit.prescriptions}
