@@ -16,7 +16,7 @@ exports.createPatient = async (req, res, next) => {
 
 //to get all patient
 exports.getAllPatients = async (req, res) => {
-  const patients = await Patient.find();
+  const patients = await Patient.find().sort({_id:-1});
 
   res.status(200).json({
     success: true,
