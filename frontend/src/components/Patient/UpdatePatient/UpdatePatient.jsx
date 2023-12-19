@@ -14,7 +14,7 @@ export const UpdatePatient = () => {
   const fetchPatientDetail = async () => {
 
     try {
-      const {data} = await axios.get(`https://patientmanagement-backend.vercel.app/api/v1/patient/${id}`);
+      const {data} = await axios.get(`https://patient-management-backend.vercel.app/api/v1/patient/${id}`);
 
       console.log(data)
 
@@ -37,7 +37,7 @@ const handleUpdate = async (e) => {
     age,
   };
   try {
-    const response = await axios.put(`https://patientmanagement-backend.vercel.app/api/v1/patient/${id}`, newPatient);
+    const response = await axios.put(`https://patient-management-backend.vercel.app/api/v1/patient/${id}`, newPatient);
 
     console.log("Patient Updated:");
     navigate("/dashboard")

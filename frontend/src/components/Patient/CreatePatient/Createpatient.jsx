@@ -18,7 +18,7 @@ const Createpatient = () => {
         age,
       };
       try {
-        const response = await axios.post("https://patientmanagement-backend.vercel.app/api/v1/patient/new", newPatient);
+        const response = await axios.post("https://patient-management-backend.vercel.app/api/v1/patient/new", newPatient);
   
         console.log("Patient created:");
         navigate("/dashboard")

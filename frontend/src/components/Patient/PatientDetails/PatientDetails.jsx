@@ -32,7 +32,7 @@ const PatientDetails = () => {
 
     try {
       const response = await axios.post(
-        `https://patientmanagement-backend.vercel.app/api/v1/patient/visits/${id}`,
+        `https://patient-management-backend.vercel.app/api/v1/patient/visits/${id}`,
         newVisit
       );
       console.log("Data Saved:");
@@ -46,7 +46,7 @@ const PatientDetails = () => {
   const fetchPatientDetail = async () => {
     try {
       const { data } = await axios.get(
-        `https://patientmanagement-backend.vercel.app/api/v1/patient/${id}`
+        `https://patient-management-backend.vercel.app/api/v1/patient/${id}`
       );
       console.log(data);
       setPatient(data.patient);
