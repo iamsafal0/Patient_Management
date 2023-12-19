@@ -18,6 +18,9 @@
   gap: 0.5rem;
   color: black;
 }
+.patient-info p{
+  text-transform: capitalize;
+}
 
 .visit-details {
   display: flex;
