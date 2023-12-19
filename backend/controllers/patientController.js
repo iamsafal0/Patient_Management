@@ -81,6 +81,7 @@ exports.deletePatient = async (req, res, next) => {
 };
 
 
+
 //to create new visit
 
 exports.createPatientVisit = async (req, res, next) => {
