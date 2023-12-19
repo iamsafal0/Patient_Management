@@ -115,3 +115,8 @@
     align-items: center;
   }
 }
+
+
+.patient-card-details{
+  text-transform: capitalize;
+}
