@@ -42,18 +42,18 @@ const Createpatient = () => {
                   onChange={(e) => setName(e.target.value)}
                 />
                 <input
-                  placeholder="Enter Patient Gender"
-                  type="text"
-                  value={gender}
-                  required
-                  onChange={(e) => setGender(e.target.value)}
-                />
-                <input
                   placeholder="Enter Patient Age"
                   type="text"
                   value={age}
                   required
                   onChange={(e) => setAge(e.target.value)}
+                />
+                <input
+                  placeholder="Enter Patient Gender"
+                  type="text"
+                  value={gender}
+                  required
+                  onChange={(e) => setGender(e.target.value)}
                 />
                 <button type="submit">Save</button>
               </form>

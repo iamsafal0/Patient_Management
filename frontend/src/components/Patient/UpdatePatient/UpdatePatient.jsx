@@ -57,21 +57,19 @@ const handleUpdate = async (e) => {
               placeholder="Enter Patient Name"
               type="text"
               value={name}
-              required
               onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              placeholder="Enter Patient Age"
+              type="text"
+              value={age}
+              onChange={(e) => setAge(e.target.value)}
             />
             <input
               placeholder="Enter Patient Gender"
               type="text"
               value={gender}
               onChange={(e) => setGender(e.target.value)}
-            />
-            <input
-              placeholder="Enter Patient Age"
-              type="text"
-              value={age}
-              required
-              onChange={(e) => setAge(e.target.value)}
             />
             <button type="submit">Update</button>
           </form>
