@@ -13,7 +13,7 @@ const Dashboard = () => {
   const fetchPatients = async () => {
     try {
       const { data } = await axios.get(
-        "https://patientmanagement-backend.onrender.com/api/v1/patients"
+        "https://patient-management-backend.vercel.app/api/v1/patients"
       );
       setPatients(data.patients);
     } catch (error) {
@@ -29,7 +29,7 @@ const Dashboard = () => {
     if (window.confirm("Are you sure you want to delete this patient?")) {
       try {
         const response = await axios.delete(
-          `https://patientmanagement-backend.onrender.com/api/v1/patient/${id}`
+          `https://patient-management-backend.vercel.app/api/v1/patient/${id}`
         );
         if (response.status === 200) {
           fetchPatients();
