@@ -18,10 +18,10 @@
   gap: 0.5rem;
   color: black;
 }
-.patient-info p{
+.patient-info p {
   text-transform: capitalize;
 }
-.patient-info h2{
+.patient-info h2 {
   color: red;
 }
 
@@ -59,14 +59,14 @@
   gap: 1rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5), 0 2px 8px 0 rgba(0, 0, 0, 0.5);
   margin-top: 1rem;
 }
-.visit-item p{
+.visit-item p {
   text-transform: capitalize;
 }
 
-.submitDialog input{
+.submitDialog input {
   height: 2rem;
   width: 15rem;
   margin: 1rem;
@@ -78,8 +78,11 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .visit-details{
-        flex-direction: column;
-        gap: 1rem;
-    }
+  .visit-details {
+    flex-direction: column;
+    gap: 1rem;
   }
+  .visit-item {
+    width: 22.5rem;
+  }
+}
