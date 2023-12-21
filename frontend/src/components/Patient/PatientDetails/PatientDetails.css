@@ -21,6 +21,9 @@
 .patient-info p{
   text-transform: capitalize;
 }
+.patient-info h2{
+  color: red;
+}
 
 .visit-details {
   display: flex;
