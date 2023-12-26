@@ -10,8 +10,11 @@ const formatDate = (date) => {
 
 const patientSchema = new mongoose.Schema({
 
-  _id:Number,
-  
+  _id:{
+    type:Number,
+    default:Math.random()*1000
+  },
+
   name: {
     type: String,
     required: true,
