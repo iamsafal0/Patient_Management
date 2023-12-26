@@ -12,7 +12,6 @@ const patientSchema = new mongoose.Schema({
 
   _id:{
     type:Number,
-    default:Math.random()*1000
   },
 
   name: {
