@@ -9,6 +9,9 @@ const formatDate = (date) => {
 };
 
 const patientSchema = new mongoose.Schema({
+
+  _id:Number,
+  
   name: {
     type: String,
     required: true,
