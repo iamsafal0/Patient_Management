@@ -88,7 +88,7 @@ const Dashboard = () => {
                 <p><strong>Patient Name:</strong> {patient.name}</p>
                 <p><strong>Patient Age:</strong> {patient.age}</p>
                 <p>
-                  <strong>Last Visited Date:</strong>
+                  <strong>Recent Visit Date:</strong>
                   {patient.visits.length > 0
                     ? patient.visits.slice(-1)[0].visitDate
                     : "NA"}

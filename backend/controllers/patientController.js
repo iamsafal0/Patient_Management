@@ -120,6 +120,7 @@ exports.searchPatient = async (req, res, next) => {
     }
 
     // Use a regex pattern to perform a case-insensitive search on the patient's name or any other relevant field
+
     const regex = new RegExp(keyword, "i");
 
     const patients = await Patient.find({
@@ -139,4 +140,5 @@ exports.searchPatient = async (req, res, next) => {
     res.status(500).json({ message: "Internal server error" });
   }
 };
+
 
